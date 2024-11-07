@@ -1,0 +1,29 @@
+/* For specific hexes #colorcode or rgb(r,g,b)*/
+
+html {
+    background-color: lightsteelblue;
+    color: rgb(0,44,118);
+
+}
+body {
+    background-color: whitesmoke;
+    font: bold 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
+    color: white;
+    text-align: center;
+    background-color: rgb(0,44,118);
+    font-family: Comic Sans MS, sans-serif;
+}
+button {
+    margin-left: 20px;
+    float : inherit;
+    background-color: white;
+    color: black;
+}
+
+#Generation {
+    margin-left: 60px;
+    background-color: white;
+    color: black;
+}

@@ -1,20 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <!--Meta is used to make the site more mobile friendly, same with vw in h1 line-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <head>
         <title>
-            Final Exam Schedule Generator!
+        Final Exam Schedule Generator
         </title>
         <link rel="stylesheet" href="page.css">
     </head>
+    <h1 style="font-size:3vw">Final Exam Schedule Generator</h1>
     <body onload="init()">
-		<div id="controls">
-			<button onclick="addCourseEntryBlock()">Add Course</button>
-			<button onclick="deleteCourseEntry()">Remove Course</button>
-		</div>
-		<div id="allCourses">
-		</div>
+        <div id="controls">
+            <button onclick="addCourseEntryBlock()">Add Course</button>
+            <button onclick="deleteCourseEntry()">Remove Course</button>
+        </div>
+        <div id="allCourses">
+        </div>
         <br>
-        <button onclick="generate()">Get Exam Time</button>
-    </body>
+        <button id= "Generation" onclick="generate()">Get Exam Time</button>
+        </body>
     <script src="index.js"></script>
 </html>
