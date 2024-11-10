@@ -57,16 +57,17 @@ function deleteCourseEntry() {
 
 function generate() {
 	for (var i = 0; i < courseCount; i++) {
-		console.log("Finding course " + i);
 		// takes in CRN from text box,
 		let CRN = document.getElementById("crn"+i).value;
-		console.log("CRN = " + CRN);
-		console.log("Found " + CRNsAndExams[CRN]);
-		display(CRNsAndExams[CRN], i);
+		display(CRNsAndExams[CRN], i);					
 	}
 }
 
 function display(examDateTime, courseNumber) {
 	let textElement = document.getElementById("examTime"+courseNumber);
-	textElement.textContent = examDateTime[0] + "'s exam is at " + examDateTime[1];
+	if (examDateTime == undefined) {					// Only try to display the 
+		textElement.textContent = "Course not found";	// course if it exists
+	} else {
+		textElement.textContent = examDateTime[0] + "'s exam is at " + examDateTime[1];
+	}
 }
